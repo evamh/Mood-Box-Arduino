@@ -12,7 +12,7 @@ Finally, I drew a few more sketches for the housing of my project in order to ge
 
 ## Week 2 (Nov. 14 - 18)
 
-My objectives for this week are to get the DFPlayer Mini working on my breadboard and work on the spray bottles with a servo concept. 
+My objectives for this week are to get the DFPlayer Mini working on the breadboard and work on the spray bottles with a servo concept for the scent component. 
 
 ### DFPlayer Mini
 

@@ -146,7 +146,7 @@ I was initially relieved, but that feeling didn’t last long. I realised that t
 
 ### Code
 
-Since my entire circuit was now correctly soldered, I decided to fine-tune the software itself. First I did some research for some audio files to play - a lullaby for sleep, classical music for focus and upbeat music for boost. While searching for the files, I had the idea to include several songs for each mood and randomise the selection. In the end, I found three songs for each and wrote code to randomise which song gets played when the button is pressed.
+Since my entire circuit is now correctly soldered, I decided to fine-tune the software itself. First I did some research for some audio files to play - a lullaby for sleep, classical music for focus and upbeat music for boost. While searching for the files, I had the idea to include several songs for each mood and randomise the selection. In the end, I found three songs for each and wrote code to randomise which song gets played when the button is pressed.
 
 I also decided to adjust the neopixels colours and change the potentiometer functionality so that it would change the shade of the neopixels, not the brightness. For sleep, I decided to use shades between blue and purple, so I used a color picker to figure out the boundaries of R, G and B. Using map(), I translated the potentiometer values into these boundaries for sleep. I did the same for focus (green shades) and boost (orange/pink shades).
 

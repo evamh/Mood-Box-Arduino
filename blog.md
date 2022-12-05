@@ -22,21 +22,13 @@ In order to test the DFPlayer Mini, I loaded a test audio file onto an SD card (
 
 Surprisingly, it didn’t take too many attempts before I was able to get it working. It was a great feeling to hear the upbeat *Sims* music playing out through the headphones! Once that was done, I decided to upgrade to an actual speaker. I soldered two wires to a small speaker from the hack lab, and plugged that into the breadboard. A few minutes later, the song was playing out loud.
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/32daace2-42e4-4a8b-9fa5-d58837a61457" width="25%">
-
-<img src="https://git.arts.ac.uk/storage/user/650/files/c878d819-4b2c-4d7a-b6f9-bc6e98fa547f" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/32daace2-42e4-4a8b-9fa5-d58837a61457" width="25%">  <img src="https://git.arts.ac.uk/storage/user/650/files/c878d819-4b2c-4d7a-b6f9-bc6e98fa547f" width="25%">
 
 ### Neopixel and circuit
 
 The next step was to add light that would change colour depending on a button pressed. I soldered wires onto an 8 pixel neopixel, added 3 buttons to the breadboard and combined the circuit together with code. I initially programmed simple RGB colours for each button - red for button 1, green for button 2 and blue for button 3. I also added a condition to make the DFPlayer Mini play music if button 1 was pressed.
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/3647c472-2b13-47f4-b2d3-3f6456e76fad" width="50%">
-
-<img src="https://git.arts.ac.uk/storage/user/650/files/e7527803-7bd4-4813-aa44-8564a1d7d713" width="50%">
-
-<img src="https://git.arts.ac.uk/storage/user/650/files/b96c5bed-1e25-4500-9979-758b655e783b" width="50%">
-
-<img src="https://git.arts.ac.uk/storage/user/650/files/d92b905e-48f8-4041-b4d9-b213f36076fd" width="50%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/3647c472-2b13-47f4-b2d3-3f6456e76fad" width="25%"><img src="https://git.arts.ac.uk/storage/user/650/files/e7527803-7bd4-4813-aa44-8564a1d7d713" width="25%"><img src="https://git.arts.ac.uk/storage/user/650/files/b96c5bed-1e25-4500-9979-758b655e783b" width="25%"><img src="https://git.arts.ac.uk/storage/user/650/files/d92b905e-48f8-4041-b4d9-b213f36076fd" width="25%">
 
 
 ### Scent output
@@ -45,9 +37,7 @@ Another goal this week is to prototype the scent output. My initial idea was to 
 
 I first attached the servo sideways to the top of the bottle cap, securing it using strong tape. I then began to test with string and wire to try and get the motor to control the spray mechanism.
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/bfa314d4-1c90-4022-81dc-3e0574257d25" width="25%">
-
-<img src="https://git.arts.ac.uk/storage/user/650/files/fe23954d-4125-4edb-bd30-e55e2a86cf0c" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/bfa314d4-1c90-4022-81dc-3e0574257d25" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/fe23954d-4125-4edb-bd30-e55e2a86cf0c" width="25%">
 
 String seemed like it would be too flimsy to properly pull the spray mechanism back and forth. I spoke to Pete who suggested I use strong wire instead, as that could potentially be robust enough to do the trick. However, I quickly realised that this idea wouldn’t work out as easily as I had anticipated. To actually get the cap to spray water required some level of power from me, and the servo motor would clearly not be strong enough to do it by itself. I decided to start looking for alternative approaches to release scent. 
 
@@ -78,11 +68,7 @@ To experiment, I connected the circuit board (still with the power pressed down)
 
 This made me think the digital pins have some resistance to them. To test this theory, I connected the circuit board to a breadboard, and added a 220 Ohms resistor from the circuit board to 5V (no digital pins). The blue light started flashing on and off very quickly, in a very similar fashion to when the board was connected to a digital pin. 
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/4db2462a-911a-41ff-808c-9d20829e045e" width="25%">
-
-<img src="https://git.arts.ac.uk/storage/user/650/files/e9afd6ba-4b36-4e0b-a615-2a144c952691" width="25%">
-
-<img src="https://git.arts.ac.uk/storage/user/650/files/e41c27d2-50d2-412c-a41a-28abd9b8c91f" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/4db2462a-911a-41ff-808c-9d20829e045e" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/e9afd6ba-4b36-4e0b-a615-2a144c952691" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/e41c27d2-50d2-412c-a41a-28abd9b8c91f" width="25%">
 
 A fellow student and I started looking more closely at the circuitry of the board. We tested what happened when we connected a wire to a digital pin, and put the other end of the wire onto one of the soldered pins of the button (on the circuit board). This would actually switch the blue LED on and off as needed. To test more concretely, I soldered the wire onto the pin, plugged the end into a digital pin, connected the atomiser and gave it a try by writing code that did a digitalWrite() to the pin. Thankfully it worked! To celebrate, I soldered on wires to the two remaining circuit boards. 
 
@@ -126,9 +112,7 @@ I set up a tutorial with Matt to clarify a few things before beginning the solde
 
 Since the buttons are part of the user experience of the box, I first need to solder them to individual button breakout boards so they can be separated from the stripboard. This was pretty straightforward - I first soldered the button pins to the board, and then soldered a ground wire and a pin wire.
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/05c1f789-71d3-4466-a321-a8935f4510c9" width="25%">
-
-<img src="https://git.arts.ac.uk/storage/user/650/files/58f7b015-0b23-420d-b803-d5173e89c769" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/05c1f789-71d3-4466-a321-a8935f4510c9" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/58f7b015-0b23-420d-b803-d5173e89c769" width="25%">
 
 Since this is my first time translating a circuit from a breadboard to a stripboard, I tried to create the circuit on a stripboard in Fritzing in order to make sure I understood the basic concept. 
 
@@ -146,7 +130,7 @@ At this point I wasn’t sure if I had just completely misunderstood how a strip
 
 Apart from the DFPlayer Mini, the rest of the components worked. I decided to count this as a win and call it a day, as I had already been soldering for several hours at that point.
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/f7104deb-79dd-4c32-b7aa-e37a95ec721e" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/f7104deb-79dd-4c32-b7aa-e37a95ec721e" width="50%">
 
 
 The next day, my goal was to solder the potentiometer onto a separate board and connect this board to the main strip board, as well as try to figure out why the DFPlayer Mini wasn’t working. 
@@ -158,8 +142,7 @@ At first, everything was just 0, even when I rotated the potentiometer. I checke
 I was initially relieved, but that feeling didn’t last long. I realised that the values coming in were random, as they would increase and decrease in no particular order and certainly not in connection to me rotating the dial. I asked Agnes who helped me use a multi-meter to test out the connections on my strip board. We made sure that each row was connected and adjacent rows weren’t, as well as making sure that the potentiometer board was connected to the main board. By using the multimeter I was able to figure out that the soldering of the three piece screw terminal onto the smaller stripboard was insufficient, as there was no connection between the potentiometer to the main board. I added more solder to the terminal, as well as for my other components (DFPlayer Mini included) and trimmed wires with a wire cutter to clean everything up. I plugged it in and like magic - everything worked, even the player. 
 
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/e771a13c-cd42-4643-b0be-8cc2a03ec7b0" width="25%">
-<img src="https://git.arts.ac.uk/storage/user/650/files/d51195f6-5abb-4724-9c9c-6e07dc9ab4ce" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/e771a13c-cd42-4643-b0be-8cc2a03ec7b0" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/d51195f6-5abb-4724-9c9c-6e07dc9ab4ce" width="25%">
 
 ### Code
 
@@ -192,15 +175,12 @@ Before cutting the design onto acrylic, I tested with cardboard to create a prot
 
 I adjusted these accordingly and printed the final design on a clear, 3mm acrylic board.
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/f18a0545-8774-443f-a20a-3e1671d14a6e" width="25%">
-
-<img src="https://git.arts.ac.uk/storage/user/650/files/f18a0545-8774-443f-a20a-3e1671d14a6e" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/f18a0545-8774-443f-a20a-3e1671d14a6e" width="25%">  <img src="https://git.arts.ac.uk/storage/user/650/files/cb9cfdd3-a0c7-47c3-a1c8-747fc21496e0" width="25%">
 
 ### Scent
 For the actual diffusers, I decided to use the small spray bottles I had ordered since the top of the caps matched the size of the atomisers surprisingly well. I took apart the spray mechanism so I was left with just the cap and a hole for the atomiser.
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/2cb8dc39-f0e3-4050-be7c-d2fb6bd97ad3" width="25%">
-<img src="https://git.arts.ac.uk/storage/user/650/files/580f8a25-a403-4c32-bb2c-348ebeaabee5" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/2cb8dc39-f0e3-4050-be7c-d2fb6bd97ad3" width="25%">  <img src="https://git.arts.ac.uk/storage/user/650/files/580f8a25-a403-4c32-bb2c-348ebeaabee5" width="25%">
 
 
 ## Week 5 (Dec. 5 - 9)
@@ -208,6 +188,7 @@ For the actual diffusers, I decided to use the small spray bottles I had ordered
 
 <img src="" width="25%">
 <img src="" width="500">
+
 
 
 

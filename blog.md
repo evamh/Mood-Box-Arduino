@@ -152,7 +152,7 @@ I also decided to adjust the neopixels colours and change the potentiometer func
 
 Finally, I decided to improve the potentiometer functionality so that it changes the neopixel shade dynamically, rather than waiting for a button to be pressed. Because the Arduino loops so frequently, I added a threshold to check for before changing the color. If the potentiometer change is above the threshold, then the code would set the shade accordingly.
 
-The next day, the DFPlayer Mini suddenly stopped working. Using a multimeter, I repeated the exercise from the day before and checked connections in the same row and adjacent rows. Everything seemed fine, so I tested that the 5V connection was connected to the 5V row (it was) and that the ground row was connected to the ground row (it wasn’t). Looking more closely at the ground row, I realised that part of the copper strip had peeled off, taking the DFPlayer mini connection with it. I added solder to connect it back to the rest of the row, and it was working again. 
+The next day, the DFPlayer Mini suddenly stopped working. Using a multimeter, I repeated the exercise from the day before and checked connections in the same row and adjacent rows. Everything seemed fine, so I tested that the 5V connection was connected to the 5V row (it was) and that the ground row was connected to the ground row (it wasn’t). Looking more closely at the ground row, I realised that part of the copper strip had peeled off, taking the DFPlayer Mini connection with it. I added solder to connect it back to the rest of the row, and it was working again. 
 
 
 ### Laser cutting

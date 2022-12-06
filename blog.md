@@ -68,7 +68,7 @@ To experiment, I connected the circuit board (still with the power pressed down)
 
 This made me think the digital pins have some resistance to them. To test this theory, I connected the circuit board to a breadboard, and added a 220 Ohms resistor from the circuit board to 5V (no digital pins). The blue light started flashing on and off very quickly, in a very similar fashion to when the board was connected to a digital pin. 
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/4db2462a-911a-41ff-808c-9d20829e045e" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/e9afd6ba-4b36-4e0b-a615-2a144c952691" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/e41c27d2-50d2-412c-a41a-28abd9b8c91f" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/4db2462a-911a-41ff-808c-9d20829e045e" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/e9afd6ba-4b36-4e0b-a615-2a144c952691" width="40%"> <img src="https://git.arts.ac.uk/storage/user/650/files/e41c27d2-50d2-412c-a41a-28abd9b8c91f" width="25%">
 
 A fellow student and I started looking more closely at the circuitry of the board. We tested what happened when we connected a wire to a digital pin, and put the other end of the wire onto one of the soldered pins of the button (on the circuit board). This would actually switch the blue LED on and off as needed. To test more concretely, I soldered the wire onto the pin, plugged the end into a digital pin, connected the atomiser and gave it a try by writing code that did a digitalWrite() to the pin. Thankfully it worked! To celebrate, I soldered on wires to the two remaining circuit boards. 
 

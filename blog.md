@@ -1,3 +1,5 @@
+## Inspiration and Ideation
+
 ## Week 1 (Nov. 7 - 11)
 
 My aim for this week is to clarify which components I need, gather them, and then draw the circuit in Tinkercad. 

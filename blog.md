@@ -191,7 +191,12 @@ For the final week, my goal is to put everything together and make sure it all w
 
 ### Building the box
 
-Building the box was surprisingly trickier than I expected. I bought plastic glue to glue the sides of the box together when building it, but the glue didn't stick. 
+Building the box was surprisingly trickier than I expected. I bought plastic glue to glue the sides of the box together when building it, but the glue unfortunately didn't stick. I decided to use tape instead to put the box together, which kept it in place. 
+
+<img src="https://git.arts.ac.uk/storage/user/650/files/7d4626ac-05c9-4003-a8d0-2f21544f44ca" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/5d3c964b-2dc6-4052-9f06-a4fc27c38ce5" width="25%">
+
+I then placed my circuit inside the box and taped the buttons, potentiometer and speaker to the back of the holes. I also taped the LEDs to the front of the box and wired the USB to the Arduino. I plugged it in to check that all the components worked as expected. 
+
 
 <img src="" width="25%">
 <img src="" width="500">

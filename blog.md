@@ -187,6 +187,11 @@ For the actual diffusers, I decided to use the small spray bottles I had ordered
 
 ## Week 5 (Dec. 5 - 9)
 
+For the final week, my goal is to put everything together and make sure it all works as expected.
+
+### Building the box
+
+Building the box was surprisingly trickier than I expected. I bought plastic glue to glue the sides of the box together when building it, but the glue didn't stick. 
 
 <img src="" width="25%">
 <img src="" width="500">

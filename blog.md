@@ -161,10 +161,10 @@ The next day, the DFPlayer Mini suddenly stopped working. Using a multimeter, I 
 
 My second goal this week is to design and cut the main housing for my project. I knew I wanted the base of the house to be a box, with holes cut out for the different components:
 
-1. Three square holes for the buttons, side by side (front)
-2. One square hole for the potentiometer on the end (front)
-3. One circle hole at the bottom for the speaker (front)
-4. Three circle holes at the top for the scent diffusers (top)
+1. Three square holes for the buttons, side by side
+2. One square hole for the potentiometer on the end 
+3. One circle hole at the bottom for the speaker
+4. Three circle holes at the top for the scent diffusers
 5. Holes on the side to connect power to the Arduino.
 
 I found a template for a box on MakerCase, and measured out my different components to try and determine the overall size of the box. Once I figured this out, I downloaded the template and imported it into Adobe Illustrator.
@@ -195,12 +195,26 @@ Building the box was surprisingly trickier than I expected. I bought plastic glu
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/7d4626ac-05c9-4003-a8d0-2f21544f44ca" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/5d3c964b-2dc6-4052-9f06-a4fc27c38ce5" width="25%">
 
-I then placed my circuit inside the box and taped the buttons, potentiometer and speaker to the back of the holes. I also taped the LEDs to the front of the box and wired the USB to the Arduino. I plugged it in to check that all the components worked as expected. 
+I then placed my circuit inside the box and taped the buttons, potentiometer and speaker to the back of the holes. I also taped the LEDs to the front of the box and wired the USB to the Arduino. I plugged it in to check that all the components worked as expected. Thankfully, almost everything did, but I noticed that when I pressed both button 1 and button 2, the sleep mood was enabled (rather than sleep and focus). I couldn't immediately see anything incorrect with how I put the circuit in the box, so I used a multimeter to check.
 
+<img src="https://git.arts.ac.uk/storage/user/650/files/2a20f213-ee6c-47eb-a790-cdc36ba8c797" width="25%">
 
+The power connection on button 1 and button 2 were connected, so I checked the stripboard and found a tiny sliver of copper wire connecting the two rows. I cleaned it off, and the board (and box!) was working again.
+
+<img src="https://git.arts.ac.uk/storage/user/650/files/09ffa7e2-28c2-4810-a601-e7f33fbe9075" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/cd2a2565-990f-4a5b-b935-05b9c171ead1" width="25%">! <img src="https://git.arts.ac.uk/storage/user/650/files/59a620db-f172-4a35-957c-6e21e79f04bc" width="25%">
+
+The next step was to fill the bottles with the correct essential oils, and attach the scent bottles to the top of the box. The oils were added as follows:
+1. Sleep - blue bottle - lavender scent
+2. Focus - yellow bottle - peppermint scent
+3. Boost - pink bottle - citrus scent
+
+<img src="https://git.arts.ac.uk/storage/user/650/files/71bbb0c5-40f4-4a40-ac5b-101d9f28798c" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/0121feec-fddc-40bb-bdd1-d4499928d6f8" width="25%">
+
+The final step was to attach the atomisers to their corresponding circuit boards and close the box!
+
+<img src="https://git.arts.ac.uk/storage/user/650/files/680c241f-ea3a-4e73-b5e5-3b1b13f9c413" width="25%">
+
+                                                                                                                
 <img src="" width="25%">
 <img src="" width="500">
-
-
-
 

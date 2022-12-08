@@ -7,9 +7,7 @@ After a bit more thought I decided to explore that idea in a sort of 'Mood Box',
 I did some research to see which colors/sounds/scents were typically associated with these three moods. 
 
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/0f2bf66b-55c0-4633-8bff-8d41fff90f85" width="25%">
-<img src="https://git.arts.ac.uk/storage/user/650/files/688010ee-f506-4014-9d3f-bfc4942ee688" width="25%">
-<img src="https://git.arts.ac.uk/storage/user/650/files/9ff20d2a-fb4d-45b9-8e80-1a24888ed631" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/0f2bf66b-55c0-4633-8bff-8d41fff90f85" width="30%"> <img src="https://git.arts.ac.uk/storage/user/650/files/688010ee-f506-4014-9d3f-bfc4942ee688" width="27%"> <img src="https://git.arts.ac.uk/storage/user/650/files/9ff20d2a-fb4d-45b9-8e80-1a24888ed631" width="25%">
 
 From this, I was able to hone in on my inputs and outputs:
 
@@ -21,6 +19,12 @@ From this, I was able to hone in on my inputs and outputs:
 1. Audio (via a speaker and mp3 files)
 2. Scent (initial idea was to use a servo motor to control a spray bottle)
 3. Lights (via neopixels)
+
+I also quickly drew a sketch of what I pictured the housing to look like:
+
+<img src="https://git.arts.ac.uk/storage/user/650/files/f2b5e6d1-a49c-4e90-b59b-6fad0ba85579" width="30%">
+
+
 
 ## Week 1 (Nov. 7 - 11)
 
@@ -255,7 +259,13 @@ BOOST
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/be5f3bca-45f0-4847-8109-615ce43efff6" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/f30d1481-142a-4afe-b5a2-4a3cee160812" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/137cfabb-479a-496d-9322-70e81f2bd146" width="25%">
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/38917d5d-81e4-45ea-87df-8b382ecc2653" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/67ea95ab-3c2d-41df-82b6-7aeba9452ee2" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/2a0b75e1-edc2-4bc8-9a45-ffe6c2c0a453" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/38917d5d-81e4-45ea-87df-8b382ecc2653" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/67ea95ab-3c2d-41df-82b6-7aeba9452ee2" width="30%"> <img src="https://git.arts.ac.uk/storage/user/650/files/2a0b75e1-edc2-4bc8-9a45-ffe6c2c0a453" width="40%">
+  
+### Future possibilities
+
+1. If I had more time, I'd like to explore and add more moods to the product, specifically options for feeling calm and increasing creativity.
+2. It would be interesting to explore how sensors measuring the user could be used as input instead of buttons. The output of these sensors would determine which mood to emulate. For example, a sweat sensor could determine if the user is stressed and if so, react with focus or sleep to help them relax.
+  
   
 <img src="" width="25%">
 

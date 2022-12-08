@@ -187,7 +187,7 @@ For the actual diffusers, I decided to use the small spray bottles I had ordered
 
 ## Week 5 (Dec. 5 - 9)
 
-For the final week, my goal is to put everything together and make sure it all works as expected.
+For the final week, my goal is to put everything together and make sure it all works.
 
 ### Building the box
 

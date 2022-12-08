@@ -130,6 +130,8 @@ Everything works as expected. The next step is to solder everything onto a board
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/c6503c76-b799-4f3c-8f4f-9bbe68e741e2" width="25%">
 
+<img src="https://git.arts.ac.uk/storage/user/650/files/4cdb76b4-bbd1-4aae-8a75-5a9e37ce9fa0" width="50%">
+
 ## Week 4 (Nov. 28 - Dec. 2)
 
 My aim this week is to get everything soldered, design and laser cut the final housing, and wrap up the code. 

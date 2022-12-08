@@ -1,5 +1,27 @@
 ## Inspiration and Ideation
 
+I wasn't sure where to begin when coming up with an idea for my final project. As I've always enjoyed playing games, I was initially drawn to creating a game of some kind - for example something similar to the popular game *Bop It!* where the machine instructs the user to perform some action (such as pulling a lever or pushing a button) and the user has to react. However, after thinking about it some more and discussing with others, I thought it would be more interesting to explore how our senses can affect our moods; more specifically the senses of sound, light and smell. 
+
+After a bit more thought I decided to explore that idea in a sort of 'Mood Box', whereby the user chooses a mood and the box lights up/plays music/emits scent associated with that choice. I'll focus on three moods in particular that already have strong associatons with different types of output: sleeping, focusing and a mood boost.
+
+I did some research to see which colors/sounds/scents were typically associated with these three moods. 
+
+
+<img src="https://git.arts.ac.uk/storage/user/650/files/0f2bf66b-55c0-4633-8bff-8d41fff90f85" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/688010ee-f506-4014-9d3f-bfc4942ee688" width="25%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/9ff20d2a-fb4d-45b9-8e80-1a24888ed631" width="25%">
+
+From this, I was able to hone in on my inputs and outputs:
+
+**Inputs**
+1. Push buttons to select a mood
+2. Potentiometer to change the response
+
+**Outputs**
+1. Audio (via a speaker and mp3 files)
+2. Scent (initial idea was to use a servo motor to control a spray bottle)
+3. Lights (via neopixels)
+
 ## Week 1 (Nov. 7 - 11)
 
 My aim for this week is to clarify which components I need, gather them, and then draw the circuit in Tinkercad. 

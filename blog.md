@@ -82,13 +82,13 @@ In order to translate the potentiometer input values to RGB values, I used the m
 
 The brightness only changes when a button is pressed, rather than dynamically. I made a note to change this functionality later on so that it’s more interactive. 
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/d6e10f66-b3e7-4f59-b1e2-c59c67869af2" width="50%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/d6e10f66-b3e7-4f59-b1e2-c59c67869af2" width="25%">
 
 ### Neopixel
 
 To make the light component of the project more interesting, I soldered a neopixel ring of 16 pixels to the neopixel strand, using the out connections of the strand to connect to the in connections of the ring.
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/38b39154-b81a-41bf-a472-b0a167f01daf" width="50%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/38b39154-b81a-41bf-a472-b0a167f01daf" width="25%">
 
 ### Entire circuit
 
@@ -102,7 +102,7 @@ I made sure to test four things:
 
 Everything works as expected. The next step is to solder everything onto a board.
 
-<img src="https://git.arts.ac.uk/storage/user/650/files/c6503c76-b799-4f3c-8f4f-9bbe68e741e2" width="50%">
+<img src="https://git.arts.ac.uk/storage/user/650/files/c6503c76-b799-4f3c-8f4f-9bbe68e741e2" width="25%">
 
 ## Week 4 (Nov. 28 - Dec. 2)
 
@@ -214,7 +214,29 @@ The final step was to attach the atomisers to their corresponding circuit boards
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/680c241f-ea3a-4e73-b5e5-3b1b13f9c413" width="25%">
 
-                                                                                                                
+After plugging power into the Arduino, I checked that each component worked as expected, and it all did!
+
+SLEEP
+
+<img src="https://git.arts.ac.uk/storage/user/650/files/4b188dc5-0dd1-47b3-8682-72cd0da02f4f" width="25%">
+
+FOCUS
+
+<img src="https://git.arts.ac.uk/storage/user/650/files/9f5b14d2-bc77-4088-8f6a-a8c89460b675" width="25%">
+
+BOOST
+
+<img src="https://git.arts.ac.uk/storage/user/650/files/8cfd8b69-397d-4f51-97be-d29e98defb8f" width="25%">
+
+### More images of the final product
+<img src="https://git.arts.ac.uk/storage/user/650/files/3db5d36b-4149-46c4-b5cc-fe9188b6db25" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/d665c0a8-c4b7-46a3-b8d1-46fc58daf568" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/64531818-5c4d-4385-b306-622707d72f3e" width="25%">
+
+<img src="https://git.arts.ac.uk/storage/user/650/files/be5f3bca-45f0-4847-8109-615ce43efff6" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/f30d1481-142a-4afe-b5a2-4a3cee160812" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/137cfabb-479a-496d-9322-70e81f2bd146" width="25%">
+
+<img src="https://git.arts.ac.uk/storage/user/650/files/38917d5d-81e4-45ea-87df-8b382ecc2653" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/67ea95ab-3c2d-41df-82b6-7aeba9452ee2" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/2a0b75e1-edc2-4bc8-9a45-ffe6c2c0a453" width="25%">
+  
 <img src="" width="25%">
+
 <img src="" width="500">
+
 

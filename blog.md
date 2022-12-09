@@ -174,6 +174,7 @@ I was initially relieved, but that feeling didn’t last long. I realised that t
 <img src="https://git.arts.ac.uk/storage/user/650/files/e771a13c-cd42-4643-b0be-8cc2a03ec7b0" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/d51195f6-5abb-4724-9c9c-6e07dc9ab4ce" width="25%">
 
 Below is a video demonstrating the soldered circuit working. All three moods are tested, the potentiometer is changing the lights and the music choice per mood is randomised. 
+
 https://git.arts.ac.uk/storage/user/650/files/47342680-77d5-4c02-b2b5-653c6249b294
 
 

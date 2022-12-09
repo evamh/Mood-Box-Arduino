@@ -33,7 +33,6 @@ int potentiometerVal = 0;
 int mappedRed = 0;
 int mappedGreen = 0;
 int mappedBlue = 0;
-int mappedVolume = 0;
 
 // keep track of current state (i.e. sleep, focus, boost)
 int previousPotentiometerVal = 0;
@@ -123,9 +122,8 @@ void run_logic() {
   button2 = digitalRead(button2Pin);
   button3 = digitalRead(button3Pin);
 
-  // potentiometer value
+  // Potentiometer value
   potentiometerVal = analogRead(potentiometerPin);
-  mappedVolume = map(potentiometerVal, 0, 1024, 15, 25);
   myDFPlayer.volume(20);
 
   // Change the pixel shade if the potentiometer was rotated (threshold of 30)
@@ -153,7 +151,7 @@ void run_logic() {
     // Set neopixel colour
     mapPixelAndSetColor(1);
 
-    // Set state to 1
+    // Set current state to 1
     currentState = 1;
 
   } // Option 2 - FOCUS
@@ -171,7 +169,7 @@ void run_logic() {
     // Set neopixel colour
     mapPixelAndSetColor(2);
     
-    // Set current state
+    // Set current state to 2
     currentState = 2;
 
   } // Option 3 - BOOST
@@ -189,7 +187,7 @@ void run_logic() {
     // Set neopixel colour
     mapPixelAndSetColor(3);
 
-    // Update current state
+    // Set current state to 3
     currentState = 3;
   }
 
@@ -279,14 +277,17 @@ void mapPixelAndSetColor(int state) {
   }
 
   if(state == 1) {
+    // SLEEP
     mappedRed = map(potentiometerVal, 0, 1024, 51, 138);
     mappedGreen = map(potentiometerVal, 0, 1024, 51, 0);
     mappedBlue = map(potentiometerVal, 0, 1024, maxRGBValue, 204);
   } else if (state == 2) {
+    // FOCUS
     mappedRed = map(potentiometerVal, 0, 1024, 10, 0);
     mappedGreen = map(potentiometerVal, 0, 1024, 255, 153);
     mappedBlue = map(potentiometerVal, 0, 1024, 153, 51);
   } else if (state == 3) {
+    // BOOST
     mappedRed = maxRGBValue;
     mappedGreen = map(potentiometerVal, 0, 1024, 133, 0);
     mappedBlue = map(potentiometerVal, 0, 1024, 51, 102);
@@ -296,19 +297,22 @@ void mapPixelAndSetColor(int state) {
 
 }
 
-// Helper function - calculate a random number between 0 and 3
+// Helper function - calculate a random number between 0 and 2
 // and index into appropriate songs array given the state
 // Return the song number 
 int getSongNumber(int state) {
 
   int song = 0;
-  int choice = rand() % 3;
+  int choice = rand() % 3; // get a random number between 0 and 2
   Serial.println("choice is "+ String(choice));
   if(state == 1) {
+    // SLEEP
     song = sleepSongs[choice];
   } else if(state == 2) {
+    // FOCUS
     song = focusSongs[choice];
   } else if(state == 3){
+    // BOOST
     song = boostSongs[choice];
   }
   
@@ -316,7 +320,6 @@ int getSongNumber(int state) {
   return song;
 
 }
-
 
 
 

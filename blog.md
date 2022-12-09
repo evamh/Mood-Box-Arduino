@@ -1,18 +1,17 @@
 ## Inspiration and Ideation
 
-I wasn't sure where to begin when coming up with an idea for my final project. As I've always enjoyed playing games, I was initially drawn to creating a game of some kind - for example something similar to the popular game *Bop It!* where the machine instructs the user to perform some action (such as pulling a lever or pushing a button) and the user has to react. However, after thinking about it some more and discussing with others, I thought it would be more interesting to explore how our senses can affect our moods; more specifically the senses of sound, light and smell. 
+I wasn't sure where to begin when coming up with an idea for my final project. As I've always enjoyed playing games, I was initially drawn to creating a game of some kind - for example something similar to the popular game *Bop It!* where the machine instructs the user to perform some action (such as pulling a lever or pushing a button) and the user has to react accordingly. However, after giving it some more thought and discussing potential ideas with others, I thought it would be more interesting to explore how our senses can affect our moods; more specifically the sensory input of sound, light and scents. 
 
-After a bit more thought I decided to explore that idea in a sort of 'Mood Box', whereby the user chooses a mood and the box lights up/plays music/emits scent associated with that choice. I'll focus on three moods in particular that already have strong associatons with different types of output: sleeping, focusing and a mood boost.
+I decided to delve into this idea by creating a 'Mood Box', whereby the user chooses a mood and the box lights up/plays music/emits scent associated with that choice. I'll focus on three moods in particular that already have strong associatons with different types of sensory input: sleeping, focusing and a mood boost.
 
-I did some research to see which colors/sounds/scents were typically associated with these three moods. 
-
+I did some research to see which colors/sounds/scents were typically associated with these three moods, and drew out the output per choice:
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/0f2bf66b-55c0-4633-8bff-8d41fff90f85" width="30%"> <img src="https://git.arts.ac.uk/storage/user/650/files/688010ee-f506-4014-9d3f-bfc4942ee688" width="27%"> <img src="https://git.arts.ac.uk/storage/user/650/files/9ff20d2a-fb4d-45b9-8e80-1a24888ed631" width="25%">
 
-From this, I was able to hone in on my inputs and outputs:
+From this, I was able to hone in on my electronic inputs and outputs:
 
 **Inputs**
-1. Push buttons to select a mood
+1. Push buttons to select a mood (x3)
 2. Potentiometer to change the response
 
 **Outputs**
@@ -219,11 +218,11 @@ For the final week, my goal is to put everything together and make sure it all w
 
 ### Building the box
 
-Building the box was surprisingly trickier than I expected. I bought plastic glue to glue the sides of the box together when building it, but the glue unfortunately didn't stick. I decided to use tape instead to put the box together, which kept it in place. 
+Building the box was surprisingly trickier than I expected. I bought plastic glue to glue the sides of the box together, but the glue unfortunately didn't stick. I decided to use tape instead to put the box together which kept it in place. 
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/7d4626ac-05c9-4003-a8d0-2f21544f44ca" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/5d3c964b-2dc6-4052-9f06-a4fc27c38ce5" width="25%">
 
-I then placed my circuit inside the box and taped the buttons, potentiometer and speaker to the back of the holes. I also taped the LEDs to the front of the box and wired the USB to the Arduino. I plugged it in to check that all the components worked as expected. Thankfully, almost everything did, but I noticed that when I pressed both button 1 and button 2, the sleep mood was enabled (rather than sleep and focus). I couldn't immediately see anything incorrect with how I put the circuit in the box, so I used a multimeter to check.
+I then placed my circuit inside the box and taped the buttons, potentiometer and speaker to their respective spots. I also taped the LEDs to the front of the box and wired the USB to the Arduino. I plugged it in to check that all the components worked as expected. Thankfully, almost everything did, but I noticed that when I pressed both button 1 and button 2, the sleep mood was enabled (rather than sleep and focus). I couldn't immediately see anything incorrect with how I put the circuit in the box, so I used a multimeter to check.
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/2a20f213-ee6c-47eb-a790-cdc36ba8c797" width="25%">
 
@@ -238,7 +237,7 @@ The next step was to fill the bottles with the correct essential oils, and attac
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/71bbb0c5-40f4-4a40-ac5b-101d9f28798c" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/0121feec-fddc-40bb-bdd1-d4499928d6f8" width="25%">
 
-The final step was to attach the atomisers to their corresponding circuit boards and close the box!
+The final step was to attach the atomisers to their corresponding circuit boards and close the box.
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/680c241f-ea3a-4e73-b5e5-3b1b13f9c413" width="25%">
 

@@ -305,6 +305,10 @@ If I had more time, it would be interesting to continue this project by doing th
 3. Making the neopixels update according to the mood, such as dimming for sleep and moving to the music for boost
 4. Adding additional patterns onto the laser cut box (such as flowers) and experimenting with different materials 
 
-Huge thank you to everyone at the CCI who advised and helped me along the way! 
+## Final project video
+
+https://git.arts.ac.uk/storage/user/650/files/28003eae-3e33-4367-a1b0-d38ffbd3a700
 
 
+
+### Huge thank you to everyone at the CCI who advised and helped me along the way! 

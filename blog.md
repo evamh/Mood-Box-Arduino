@@ -173,9 +173,25 @@ I was initially relieved, but that feeling didn’t last long. I realised that t
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/e771a13c-cd42-4643-b0be-8cc2a03ec7b0" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/d51195f6-5abb-4724-9c9c-6e07dc9ab4ce" width="25%">
 
+Below is a video demonstrating the soldered circuit working. All three moods are tested, the potentiometer is changing the lights and the music choice per mood is randomised. 
+https://git.arts.ac.uk/storage/user/650/files/47342680-77d5-4c02-b2b5-653c6249b294
+
+
 ### Code
 
 Since my entire circuit is now correctly soldered, I decided to fine-tune the software itself. First I did some research for some audio files to play - a lullaby for sleep, classical music for focus and upbeat music for boost. While searching for the files, I had the idea to include several songs for each mood and randomise the selection. In the end, I found three songs for each and wrote code to randomise which song gets played when the button is pressed.
+
+**Music (in order on SD card)**
+1. Serenade (Megan Wofford) -> sleep
+2. Sleeping Kittens (Lil.Y) -> sleep 
+3. Mr. Otter's Rainy Day (Lil.Y) -> sleep
+4. Minuet From String Quintet In E Major, Op. 13, No. 5 Version 1 -> focus
+5. String Quartet No. 5 in F Major, K. 158: Tempo Di Menuetto Part 2 -> focus
+6. Waltz for the Emotional (Arylide Fields) -> focus
+7. Call Me Up (Isola James) -> boost
+8. Left Hand (Lofive) -> boost
+9. U & Me (SLCT) -> boost
+
 
 I also decided to adjust the neopixels colours and change the potentiometer functionality so that it would change the shade of the neopixels, not the brightness. For sleep, I decided to use shades between blue and purple, so I used a color picker to figure out the boundaries of R, G and B. Using map(), I translated the potentiometer values into these boundaries for sleep. I did the same for focus (green shades) and boost (orange/pink shades).
 
@@ -247,9 +263,11 @@ SLEEP
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/4b188dc5-0dd1-47b3-8682-72cd0da02f4f" width="25%">
 
+
 FOCUS
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/9f5b14d2-bc77-4088-8f6a-a8c89460b675" width="25%">
+
 
 BOOST
 
@@ -261,13 +279,32 @@ BOOST
 <img src="https://git.arts.ac.uk/storage/user/650/files/be5f3bca-45f0-4847-8109-615ce43efff6" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/f30d1481-142a-4afe-b5a2-4a3cee160812" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/137cfabb-479a-496d-9322-70e81f2bd146" width="25%">
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/38917d5d-81e4-45ea-87df-8b382ecc2653" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/67ea95ab-3c2d-41df-82b6-7aeba9452ee2" width="30%"> <img src="https://git.arts.ac.uk/storage/user/650/files/2a0b75e1-edc2-4bc8-9a45-ffe6c2c0a453" width="40%">
-  
+
+### Video demonstration
+https://git.arts.ac.uk/storage/user/650/files/75c02928-4f8d-442a-84a1-0147061a26c0
+
+### Things I would do differently
+
+This project was a first for me in almost every respect: going through the ideation process, designing a product, discovering electronic components, wiring a circuit, soldering, laser cutting, etc. As such, there were a few things I was unfamiliar with and would now do differently given the experience.
+
+The main one would be the soldering process. I would first try to get a board that's the correct size rather than a larger one. The larger board took up more space in the final box and ended up confusing my brain every time I would try to check the circuitry on my board. In addition, paying careful attention to the length of the wires on the soldered circuit is important. Since many of my components required branching away from the board, I needed longer wires. I tried to measure these out to be the same, and in the end I made them a little longer to be safe. However, it would have simplified the final soldered circuit if the wires were not too much longer than they needed to be. In addition, making sure to properly solder wires onto components and fixing everything with hot glue is crucial (and saves a lot of time re-soldering wires!).
+
+Every time I added a component to the soldered circuit, I would test it using the Arduino code and printing to the Serial monitor. In the future it'll be useful to also test with a multimeter in parallel to double check everything is connected as expected. 
+
+One thing I wouldn't do differently but will definitely remember to do again is to test any laser cutting design with cardboard before the actual material. It was by doing this that I realised the holes on my box were not the correct size and I was able to adjust before cutting acrylic, saving a lot of time and resources. 
+
 ### Future possibilities
 
-1. If I had more time, I'd like to explore and add more moods to the product, specifically options for feeling calm and increasing creativity.
-2. It would be interesting to explore how sensors measuring the user could be used as input instead of buttons. The output of these sensors would determine which mood to emulate. For example, a sweat sensor could determine if the user is stressed and if so, react with focus or sleep to help them relax.
-  
-  
+If I had more time, it would be interesting to continue this project by doing the following:
+
+1. I'd like to add more moods to the box, specifically options for feeling calm and increasing creativity.
+2. It would be interesting to explore how sensors measuring the user could be used as input instead of buttons. The output of these sensors would determine which mood to emulate. For example, a galvanic skin response sensor could determine if the user is nervous and if so, react with focus or sleep to help them relax.
+3. Making the neopixels update according to the mood, such as dimming for sleep and moving to the music for boost
+4. Adding additional patterns onto the laser cut box (such as flowers) and experimenting with different materials 
+
+Huge thank you to everyone at the CCI who advised and helped me along the way! 
+
+
 <img src="" width="25%">
 
 <img src="" width="500">

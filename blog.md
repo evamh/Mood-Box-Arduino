@@ -103,9 +103,9 @@ A fellow student and I started looking more closely at the circuitry of the boar
 
 My second goal of this week is to add a potentiometer to the circuit and use it to control the brightness of the neopixel. This was pretty straightforward to add to my existing circuit. 
 
-In order to translate the potentiometer input values to RGB values, I used the map() function to translate the upper and lower bounds of the potentiometer into valid RGB values. I did the same thing for the DFPlayer mini volume. 
+In order to translate the potentiometer input values to RGB values, I used the map() function to translate the upper and lower bounds of the potentiometer into valid RGB values. 
 
-The brightness only changes when a button is pressed, rather than dynamically. I made a note to change this functionality later on so that it’s more interactive. 
+The brightness only changes after rotating the potentiometer right after a button is pressed, rather than dynamically after rotation. I made a note to change this functionality later on so that it’s more interactive. 
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/d6e10f66-b3e7-4f59-b1e2-c59c67869af2" width="25%">
 
@@ -135,7 +135,7 @@ Everything works as expected. The next step is to solder everything onto a board
 
 My aim this week is to get everything soldered, design and laser cut the final housing, and wrap up the code. 
 
-I set up a tutorial with Matt to clarify a few things before beginning the soldering process, and he suggested to look into the INPUT_PULLUP functionality of the digital pins for the buttons. This would allow me to bypass the resistors and the need for individual power and digital pin connections. I quickly tested this on my circuit and it worked. This will simplify my final circuit quite a bit given I have three separate buttons. 
+I set up a tutorial with Matt to clarify a few things before beginning the soldering process, and he suggested to look into the INPUT_PULLUP functionality of the digital pins for the buttons. This would allow me to bypass the resistors and the need for individual power and digital pin connections. I did some more research and tested this on my circuit. It worked! This will simplify my final circuit quite a bit given I have three separate buttons. 
 
 ### Soldering 
 
@@ -147,7 +147,7 @@ Since this is my first time translating a circuit from a breadboard to a stripbo
 
 <img width="50%" alt="board_sketch" src="https://git.arts.ac.uk/storage/user/650/files/727ac6ce-4fa0-4c5d-889d-459d57e9e42a">
 
-To begin soldering, I figured out where the header pins should go to connect the board to the Arduino. I had to use two separate boards to connect into the Arduino, one that connected the first half of the board together (Analog pins and first set of digital pins) and one that connected the second half (power and rest of the pins). This is because the two sides of the Arduino weren’t balanced. I soldered the header pins onto the two boards.
+To begin soldering, I figured out where the header pins should go to connect the board to the Arduino. I had to use two separate boards to connect into the Arduino, one that connected the first half of the board together (Analog pins and first set of digital pins) and one that connected the second half (power and rest of the pins). This is because the two sides of the Arduino aren’t balanced. I soldered the header pins onto the two boards.
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/6f0c6354-ba09-45bb-87ec-7835094f0a8b" width="25%">
 
@@ -173,14 +173,10 @@ I was initially relieved, but that feeling didn’t last long. I realised that t
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/e771a13c-cd42-4643-b0be-8cc2a03ec7b0" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/d51195f6-5abb-4724-9c9c-6e07dc9ab4ce" width="25%">
 
-Below is a video demonstrating the soldered circuit working. All three moods are tested, the potentiometer is changing the lights and the music choice per mood is randomised. 
-
-https://git.arts.ac.uk/storage/user/650/files/47342680-77d5-4c02-b2b5-653c6249b294
-
 
 ### Code
 
-Since my entire circuit is now correctly soldered, I decided to fine-tune the software itself. First I did some research for some audio files to play - a lullaby for sleep, classical music for focus and upbeat music for boost. While searching for the files, I had the idea to include several songs for each mood and randomise the selection. In the end, I found three songs for each and wrote code to randomise which song gets played when the button is pressed.
+Since my entire circuit is now correctly soldered, I decided to fine-tune the code itself. First I did some research for some audio files to play - a lullaby for sleep, classical music for focus and upbeat music for boost. While searching for the files, I had the idea to include several songs for each mood and randomise the selection. In the end, I found three songs for each and wrote code to randomly select which song gets played when the button is pressed.
 
 **Music (in order on SD card)**
 1. Serenade (Megan Wofford) -> sleep
@@ -194,11 +190,17 @@ Since my entire circuit is now correctly soldered, I decided to fine-tune the so
 9. U & Me (SLCT) -> boost
 
 
-I also decided to adjust the neopixels colours and change the potentiometer functionality so that it would change the shade of the neopixels, not the brightness. For sleep, I decided to use shades between blue and purple, so I used a color picker to figure out the boundaries of R, G and B. Using map(), I translated the potentiometer values into these boundaries for sleep. I did the same for focus (green shades) and boost (orange/pink shades).
+I also decided to adjust the neopixels colours and change the potentiometer functionality so that it would change the shade of the neopixels, not the brightness. For sleep, I decided to use shades between blue and purple, so I used a color picker to figure out the boundaries of R, G and B. Using map(), I translated the potentiometer values into these boundaries for sleep. I did the same for focus (green and blue shades) and boost (orange and pink shades).
 
 Finally, I decided to improve the potentiometer functionality so that it changes the neopixel shade dynamically, rather than waiting for a button to be pressed. Because the Arduino loops so frequently, I added a threshold to check for before changing the color. If the potentiometer change is above the threshold, then the code would set the shade accordingly.
 
 The next day, the DFPlayer Mini suddenly stopped working. Using a multimeter, I repeated the exercise from the day before and checked connections in the same row and adjacent rows. Everything seemed fine, so I tested that the 5V connection was connected to the 5V row (it was) and that the ground row was connected to the ground row (it wasn’t). Looking more closely at the ground row, I realised that part of the copper strip had peeled off, taking the DFPlayer Mini connection with it. I added solder to connect it back to the rest of the row, and it was working again. 
+
+### Video demonstration of soldered circuit
+
+Below is a video demonstrating the soldered circuit working. I tested that all three moods are working, rotating the potentiometer changes the lights and pressing the same mood twice can result in a different song selection. 
+
+https://git.arts.ac.uk/storage/user/650/files/47342680-77d5-4c02-b2b5-653c6249b294
 
 
 ### Laser cutting
@@ -281,7 +283,7 @@ BOOST
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/38917d5d-81e4-45ea-87df-8b382ecc2653" width="25%"> <img src="https://git.arts.ac.uk/storage/user/650/files/67ea95ab-3c2d-41df-82b6-7aeba9452ee2" width="30%"> <img src="https://git.arts.ac.uk/storage/user/650/files/2a0b75e1-edc2-4bc8-9a45-ffe6c2c0a453" width="40%">
 
-### Video demonstration
+### Video demonstration of entire box
 https://git.arts.ac.uk/storage/user/650/files/75c02928-4f8d-442a-84a1-0147061a26c0
 
 ### Things I would do differently

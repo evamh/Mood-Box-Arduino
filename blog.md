@@ -286,7 +286,7 @@ https://git.arts.ac.uk/storage/user/650/files/75c02928-4f8d-442a-84a1-0147061a26
 
 ### Things I would do differently
 
-This project was a first for me in almost every respect: going through the ideation process, designing a product, discovering electronic components, wiring a circuit, soldering, laser cutting, etc. As such, there were a few things I was unfamiliar with and would now do differently given the experience.
+This project was a first for me in almost every respect: going through the ideation process, designing a product, discovering various electronic components, wiring a circuit, soldering, laser cutting, etc. As such, there were a few things I was unfamiliar with and would now do differently given the experience.
 
 The main one would be the soldering process. I would first try to get a board that's the correct size rather than a larger one. The larger board took up more space in the final box and ended up confusing my brain every time I would try to check the circuitry on my board. In addition, paying careful attention to the length of the wires on the soldered circuit is important. Since many of my components required branching away from the board, I needed longer wires. I tried to measure these out to be the same, and in the end I made them a little longer to be safe. However, it would have simplified the final soldered circuit if the wires were not too much longer than they needed to be. In addition, making sure to properly solder wires onto components and fixing everything with hot glue is crucial (and saves a lot of time re-soldering wires!).
 
@@ -304,10 +304,5 @@ If I had more time, it would be interesting to continue this project by doing th
 4. Adding additional patterns onto the laser cut box (such as flowers) and experimenting with different materials 
 
 Huge thank you to everyone at the CCI who advised and helped me along the way! 
-
-
-<img src="" width="25%">
-
-<img src="" width="500">
 
 

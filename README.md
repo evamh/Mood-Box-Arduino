@@ -31,7 +31,7 @@ I also quickly drew a sketch of what I pictured the housing to look like:
 
 
 
-## Week 1 (Nov. 7 - 11)
+## Week 1 
 
 My aim for this week is to clarify which components I need, gather them, and then draw the circuit in Tinkercad. 
 
@@ -43,7 +43,7 @@ Finally, I drew a few more sketches for the housing of my project in order to ge
 
 
 
-## Week 2 (Nov. 14 - 18)
+## Week 2 
 
 My objectives for this week are to get the DFPlayer Mini working on the breadboard and work on the spray bottles with a servo concept for the scent component. 
 
@@ -79,7 +79,7 @@ I ordered some atomisers that diffuse water when placed on a humid surface, and 
 ### Code
 This week I also started writing my main code, adding functionality each time I introduced a component to the circuit. 
 
-## Week 3 (Nov. 21 - 25)
+## Week 3 
 
 My main goal for this week is to get the atomiser working, add a potentiometer to my circuit, and connect all the pieces together on a breadboard. 
 
@@ -137,7 +137,7 @@ Everything works as expected. The next step is to solder everything onto a board
 
 <img src="https://git.arts.ac.uk/storage/user/650/files/4cdb76b4-bbd1-4aae-8a75-5a9e37ce9fa0" width="50%">
 
-## Week 4 (Nov. 28 - Dec. 2)
+## Week 4 
 
 My aim this week is to get everything soldered, design and laser cut the final housing, and wrap up the code. 
 
@@ -237,7 +237,7 @@ For the actual diffusers, I decided to use the small spray bottles I had ordered
 <img src="https://git.arts.ac.uk/storage/user/650/files/2cb8dc39-f0e3-4050-be7c-d2fb6bd97ad3" width="25%">  <img src="https://git.arts.ac.uk/storage/user/650/files/580f8a25-a403-4c32-bb2c-348ebeaabee5" width="25%">
 
 
-## Week 5 (Dec. 5 - 9)
+## Week 5 
 
 For the final week, my goal is to put everything together and make sure it all works.
 
